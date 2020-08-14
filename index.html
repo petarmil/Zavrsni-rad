@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Portfolio</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="dist/css/lightbox.min.css" rel="stylesheet" />
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<header id="header">
+		<div class="contact">
+				<span><i class="fas fa-mobile-alt"></i> 111.2222.333</span>
+				<span><i class="far fa-envelope"></i> email@email.email</span>
+		</div>
+		<div class="social">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+	</header>
+	
+	<div class="slider">
+    	<div class="slajder1">
+    		<div class="text">
+    			<p>Web &amp; Graphic design</p>
+    		</div>
+    		
+    	</div>
+   		<div class="slajder2">
+   			<div class="text">
+    			<p>Illustration &amp; Photography</p>
+    		</div>
+   		</div>
+   			
+   		<div class="slajder3">
+   			<div class="text">
+    			<p>SEO &amp; Digital marketing</p>
+    		</div>
+   		</div>
+  	</div><!-- end slider -->
+  	<nav id="nav">
+  		<div id="logo">
+  			<p>Petar Miladinovic</p>
+  			
+  		</div>
+  		<div id="navigacija">
+  			<ul>
+				<li><a href="#about">about</a></li>
+				<li><a href="#portext">portfolio</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+  		</div>
+  	</nav><!-- end #nav-->
+
+	<div id="about">
+		<div id="text">
+			<h2>About</h2>
+			<p>Postovanje, ja sam Petar Miladinovic iz Nove Gajdobre i nadam se da cu ovim radom zadovoljiti sve kriterijume voditelja kursa i uspesno privesti kraju skolovanje na IT Academy</p>
+		</div>
+		<div id="skills">
+			<div class="skill"><img src="images/skills/photoshop_PNG65.png" alt=""></div>
+			<div class="skill"><img src="images/skills/adobe-illustrator.png" alt=""></div>
+			<div class="skill"><img src="images/skills/WordPress.png" alt=""></div>
+			<div class="skill"><img src="images/skills/dreamweaver-logo.png" alt=""></div>
+			<div class="skill"><img src="images/skills/css-3-logo-png-transparent.png" alt=""></div>
+			<div class="skill"><img src="images/skills/javascript.png" alt=""></div>
+			<div class="skill"><img src="images/skills/HTML5_logo.png" alt=""></div>
+			<div class="skill"><img src="images/skills/seo.png" alt=""></div>
+			
+		</div>
+	</div><!-- ned #about-->
+	
+		<div id="portext">
+				<h1>Portfolio</h1>
+				<p>Predstavljam vam neke od svojih radova sa IT Academy</p>
+		</div>
+
+	<div id="portfolio">
+		
+		<a href="images/portfolio/_Book_cover_mock-up.jpg" data-lightbox="roadtrip"><img src="images/portfolio/_Book_cover_mock-up-lightbox.jpg" alt=""></a>
+		<a href="images/portfolio/Baby_giraffe.jpg" data-lightbox="roadtrip"><img src="images/portfolio/Baby_giraffe-lightbox.jpg" alt=""></a>
+		<a href="images/portfolio/Dizajn naslovne stranice magazina.jpg" data-lightbox="roadtrip"><img src="images/portfolio/Dizajn naslovne stranice magazina-lightbox.jpg" alt=""></a>
+		<a href="images/portfolio/Poster.jpg" data-lightbox="roadtrip"><img src="images/portfolio/Poster-lightbox.jpg" alt=""></a>
+
+			
+	</div><!-- end portfolio-->
+	
+	<div id="mapa">
+		
+	</div>
+	<div id="contact">
+		
+		<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="serbia">Serbia</option>
+      <option value="croatia">Croatia</option>
+      <option value="BIH">BIH</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+	<div id="contacttext">
+		<p>Ukoliko imate pitanja,<br> pisite,<br> voljni smo da vam odgovorimo...</p>
+	</div>
+	</div> <!-- end contact-->
+	
+  <footer id="footer">
+  	
+  	<div id="copyright">
+  		<p>Petar Miladinovic &copy;</p>
+  	</div>
+  	<div class="social">
+  				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+  	</div>
+  	
+  </footer>	<!-- end footer-->
+	
+	</div><!-- end wrapper-->
+	
+	
+<script>
+
+	
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+		
+    });
+	    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+
+	
+</script>
+<script>
+			var mymap = L.map('mapa').setView([45.252979, 19.828010], 16);
+			var marker = L.marker([45.252979, 19.828010]).addTo(mymap);
+	L.tileLayer('		https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: 'Lako nas pronadjite',
+	maxZoom: 18,
+	
+}).addTo(mymap);
+	</script>
+<script src="dist/js/lightbox.min.js"></script>
+</body>
+</html>
